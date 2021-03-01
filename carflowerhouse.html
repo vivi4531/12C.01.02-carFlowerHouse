@@ -8,8 +8,42 @@
     <link rel="stylesheet" href="carflowerhouse.css">
 </head>
 <body>
-    <svg width="500" height="500">
+    <svg width="2000" height="500">
+
+        <line class="baseline" x1="0" x2="1000" y1="200" y2="200"/>
+
+        <!-- House -->
+        <rect class="house-base" x="60" y="100" width="100" height="100" />
+        <polygon class="house-roof" points="60 100, 110 50, 160 100" />
+        <!-- Start x,y - midten x,y - slut x,y -->
+        <rect class="house-window" x="75" y="130" width="30" height="30" />
+        <rect class="house-door" x="120" y="130" width="30" height="70" />
         
+
+        <!-- Flower -->
+        <g class="flower_kf">
+        <line class="flower-stem" x1="300" x2="300" y1="100" y2="200" />
+        
+        <circle class="flower-leaf" cx="280" cy="75" r="12"/>
+        <circle class="flower-leaf" cx="300" cy="60" r="12"/>
+        <circle class="flower-leaf" cx="320" cy="75" r="12"/>
+        <circle class="flower-leaf" cx="285" cy="100" r="12"/>
+        <circle class="flower-leaf" cx="315" cy="100" r="12"/>
+
+        <circle class="flower-middle" cx="300" cy="85" r="15"/>
+        </g>
+
+        <!-- Car -->
+        <g class="car_kf">
+        <line class="car-stick" x1="550" x2="650" y1="100" y2="70"/>
+        <ellipse class="car-steering-wheel" cx="630" cy="75" rx="25" ry="10"/>
+        
+        <polygon class="car-base" points="500 100, 600 90, 800 90, 850 100, 850 150, 500 150"/>
+        <circle class="car-wheel" cx="600" cy="160" r="40"/>
+        <circle class="car-wheel" cx="750" cy="160" r="40"/>
+        </g>
+
     </svg>
+    <script src="carflowerhouse.js"></script>
 </body>
 </html>

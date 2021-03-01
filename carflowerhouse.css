@@ -1,0 +1,119 @@
+/* Base/grass */
+.baseline {
+  stroke: green;
+  stroke-width: 5;
+}
+
+/* House */
+.house-base {
+  stroke: palevioletred;
+  fill: peachpuff;
+  stroke-width: 5;
+}
+
+.house-roof {
+  stroke: black;
+  stroke-width: 5;
+}
+
+.house-window {
+  fill: lightgray;
+}
+
+.house-door {
+  fill: brown;
+}
+
+/* Flower */
+.flower-stem {
+  stroke: green;
+  stroke-width: 5;
+}
+
+.flower-middle {
+  fill: orange;
+}
+
+.flower-leaf {
+  fill: pink;
+  stroke: hotpink;
+  stroke-width: 5;
+}
+
+/* Car */
+.car-base {
+  stroke: black;
+  fill: salmon;
+  stroke-width: 5;
+}
+
+.car-wheel {
+  fill: lightgrey;
+}
+
+.car-steering-wheel {
+  fill: hotpink;
+}
+
+.car-stick {
+  stroke: grey;
+  stroke-width: 5;
+}
+
+/* ANIMATION */
+.flower_kf {
+  animation-name: flower_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-out forwards;
+
+  transform-origin: center;
+}
+
+@keyframes flower_kf {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.car_kf {
+  animation-name: car_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-out;
+  transform-origin: center;
+}
+
+@keyframes car_kf {
+  from {
+    transform: translateX(75vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.house_kf {
+  animation-name: house_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-out;
+  transform-origin: center;
+}
+
+@keyframes house_kf {
+  from {
+    fill: peachpuff;
+  }
+
+  to {
+    fill: purple;
+  }
+}
